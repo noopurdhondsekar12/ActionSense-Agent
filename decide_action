@@ -1,0 +1,12 @@
+def decide_action(summary, task_type, task_context):
+    if detect_urgency(summary):
+        # Prioritize respond or schedule immediately for urgent messages
+        if task_type == "schedule":
+            return "schedule"
+        else:
+            return "respond"
+    # Existing logic follows
+    summary_lower = summary.lower()
+    if any(word in summary_lower for word in ["spam", "ignore", "unsubscribe"]):
+        return "ignore"
+    # ... rest of your existing logic

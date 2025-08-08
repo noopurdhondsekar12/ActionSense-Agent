@@ -1,0 +1,23 @@
+[
+    {
+      "input": {
+        "user_id": "abc123",
+        "summary": "Is the pitch deck finalized?",
+        "type": "follow-up",
+        "task_context": "project-checkin",
+        "platform": "whatsapp",
+        "timestamp": "2025-08-05T13:05:00Z"
+      },
+      "expected_output": {
+        "action_type": "respond",
+        "generated_text": "We're on it and will update you shortly. 😊",
+        "platform_ready": true,
+        "response_format": {
+          "platform": "whatsapp",
+          "text": "We're on it and will update you shortly. 😊",
+          "delay": "0"
+        }
+      }
+    }
+  ]
+  
