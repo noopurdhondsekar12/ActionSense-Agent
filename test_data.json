@@ -1,23 +1,34 @@
 [
-    {
-      "input": {
-        "user_id": "abc123",
-        "summary": "Is the pitch deck finalized?",
-        "type": "follow-up",
-        "task_context": "project-checkin",
-        "platform": "whatsapp",
-        "timestamp": "2025-08-05T13:05:00Z"
-      },
-      "expected_output": {
-        "action_type": "respond",
-        "generated_text": "We're on it and will update you shortly. 😊",
-        "platform_ready": true,
-        "response_format": {
-          "platform": "whatsapp",
-          "text": "We're on it and will update you shortly. 😊",
-          "delay": "0"
-        }
-      }
-    }
-  ]
-  
+  {
+    "user_id": "u1",
+    "summary": "Please send the report ASAP.",
+    "type": "follow-up",
+    "task_context": "project-checkin",
+    "platform": "whatsapp",
+    "timestamp": "2025-08-05T13:05:00Z"
+  },
+  {
+    "user_id": "u2",
+    "summary": "Confirm the meeting time for tomorrow.",
+    "type": "meeting",
+    "task_context": "client-call",
+    "platform": "email",
+    "timestamp": "2025-08-06T09:00:00Z"
+  },
+  {
+    "user_id": "u3",
+    "summary": "User please upload the file to the shared drive.",
+    "type": "request",
+    "task_context": "document-transfer",
+    "platform": "slack",
+    "timestamp": "2025-08-06T10:15:00Z"
+  },
+  {
+    "user_id": "u4",
+    "summary": "Thanks, done. You can ignore now.",
+    "type": "follow-up",
+    "task_context": "project-checkin",
+    "platform": "whatsapp",
+    "timestamp": "2025-08-06T11:30:00Z"
+  }
+]
